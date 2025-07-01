@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tom Schoorstra - Automation Expert specializing in HubSpot, AI, Zapier, and n8n automation solutions. Transform your business processes with efficient workflows.">
+    <meta name="theme-color" content="#007AFF">
+    <title>Tom Schoorstra - Automation Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container">
+            <div class="logo" role="banner">Tom Schoorstra</div>
+            <ul class="nav-links" role="navigation">
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" hidden>
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero" aria-label="Introduction">
+            <div class="container split-layout">
+                <div class="hero-content">
+                    <h1>Who Is <span class="highlight">Tom<br>Schoorstra</span>?</h1>
+                    <div class="hero-description">
+                        <p>Automation expert specializing in streamlining business processes and creating efficient workflows. Transforming complex challenges into seamless automated solutions.</p>
+                    </div>
+                    <p class="subtitle" aria-live="polite"></p>
+                    <div class="cta-buttons">
+                        <a href="#portfolio" class="button primary">View My Work</a>
+                        <a href="#contact" class="button secondary">Let's Connect</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="./images/tom-profile.jpg" alt="Tom Schoorstra - Professional headshot" class="profile-image" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section" aria-label="About me">
+            <div class="container">
+                <h2 id="aboutTitle"></h2>
+                <p id="aboutContent"></p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section" aria-label="Portfolio">
+            <div class="container">
+                <h2 id="portfolioTitle"></h2>
+                <div class="timeline">
+                    <div class="timeline-container" id="timelineContainer" role="list">
+                        <!-- Timeline items will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section" aria-label="Contact information">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Interested in automation solutions? Let's connect!</p>
+                <a href="mailto:tomschoorstrar@gmail.com" class="button" aria-label="Send email to Tom Schoorstra">Email Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="currentYear">2024</span> <span id="footerName"></span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="data/content.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
